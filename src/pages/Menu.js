@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuList } from "../Helpers/MenuList";
 import MenuItem from "../components/MenuItem";
-import '../styles/Menu.css'
+import "../styles/Menu.css";
 
 function Menu() {
   return (
@@ -11,7 +11,7 @@ function Menu() {
         {MenuList.map((menuItem, key) => {
           return (
             <MenuItem
-            key={key}
+              key={key}
               name={menuItem.name}
               image={menuItem.image}
               price={menuItem.price}
