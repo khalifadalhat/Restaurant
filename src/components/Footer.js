@@ -14,7 +14,7 @@ function Footer() {
         <FacebookIcon />
         <LinkedInIcon />
         </div>
-        <p> &copy;2023 khalifadalhat.netlify.app</p>
+        <p> &copy;2023 Savory Haven. All rights reserved.</p>
     </div>
   )
 }
