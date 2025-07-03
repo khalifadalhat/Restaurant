@@ -18,12 +18,11 @@ function Contact() {
           <label htmlFor="email">Email</label>
           <input type="email" name="email" placeholder="Enter email..." />
 
-          <label htmlFor="message">Meassage</label>
+          <label htmlFor="message">Message</label>
           <textarea
             name="message"
             placeholder="Enter a Message..."
-            cols="30"
-            rows="10"
+            rows="5"
           ></textarea>
           <button type="submit">Send Message</button>
         </form>
