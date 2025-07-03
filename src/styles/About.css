@@ -1,32 +1,95 @@
-.about{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-}.aboutTop {
+.about {
   width: 100%;
-  height: 45%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTop {
+  width: 100%;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .aboutBottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
 }
-.aboutBottom p {
-  width: 1200px;
+
+.aboutContent {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.aboutContent p {
+  width: 100%;
+  max-width: 800px;
+  margin: 15px 0;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 16px;
+}
+
 .about .aboutBottom h1 {
   font-weight: 400;
-  font-size: 70px;
+  font-size: 2.5rem;
   color: black;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  transform: translateY(-40px);
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    height: auto;
+    min-height: 90vh;
+  }
+  
+  .aboutTop {
+    height: 40vh;
+    min-height: 400px;
+  }
+  
+  .aboutBottom {
+    padding: 40px 20px;
+  }
+  
+  .aboutContent p {
+    font-size: 18px;
+  }
+  
+  .about .aboutBottom h1 {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .aboutTop {
+    height: 50vh;
+  }
+  
+  .aboutContent p {
+    font-size: 20px;
+    max-width: 900px;
+  }
+  
+  .about .aboutBottom h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .aboutContent p {
+    max-width: 1000px;
+  }
 }
